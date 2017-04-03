@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@layout/home_bg_screen"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#E6fbdfc1" >
+        
+        <ImageView android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/app_name"/>
+        
+        <ImageView android:id="@+id/app_logo"
+            android:layout_below="@id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/logo2"
+            />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/arrow"
+            android:paddingLeft="15dp"
+            android:text="Saved Data"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/newProgram_button"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_above="@id/save_button"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_selector"
+            android:drawableLeft="@drawable/plus_sign"
+            android:paddingLeft="15dp"
+            android:text="New Program"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+</LinearLayout>

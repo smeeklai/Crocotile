@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/custom_theme_color" >
+
+    <ImageView
+        android:id="@+id/ratingListviewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:id="@+id/textLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ratingListviewItem"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nameListviewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/dateListviewItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <CheckBox
+        android:id="@+id/boxListviewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_selector"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+</RelativeLayout>

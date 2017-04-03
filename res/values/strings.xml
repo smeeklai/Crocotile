@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Crocotile</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <color name="pink">#ffaaaa</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue">#b8c1eB</color>
+    <color name="green">#d6ebb8</color>
+    <color name="orange">#f7bc56</color>
+    <string name="content">content goes here</string>
+    <string name="home">Home</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+</resources>

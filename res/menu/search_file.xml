@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:id="@+id/item1" android:title="Sort Ascending">
+        <menu>
+            <item android:id="@+id/ascname" android:title="Ascending By Name"/>
+            <item android:id="@+id/ascdate" android:title="Ascending By Date"/>
+            <item android:id="@+id/ascrate" android:title="Ascending By Rate"/>
+        </menu>
+    </item>
+    <item android:id="@+id/item2" android:title="Sort Descending">
+        <menu>
+            <item android:id="@+id/dscname" android:title="Descending By Name"/>
+            <item android:id="@+id/dscdate" android:title="Descending By Date"/>
+            <item android:id="@+id/dscrate" android:title="Descending By Rate"/>
+        </menu>
+    </item>
+    <item android:id="@+id/clear" android:title="Clear Database"></item>
+
+</menu>

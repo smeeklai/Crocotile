@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ProgramActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white" >
+
+            <ImageButton
+                android:id="@+id/runButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/save" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/noteFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/linear1" >
+        </FrameLayout>
+
+        <SlidingDrawer
+            android:id="@+id/components"
+            android:layout_width="400dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/linear1"
+            android:layout_alignParentRight="true"
+            android:layout_margin="0dp"
+            android:content="@+id/content2"
+            android:handle="@+id/handle2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/handle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/slide2" />
+
+            <LinearLayout
+                android:id="@id/content2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/pink"
+                android:orientation="verti
+                cal" >
+
+                <TabHost
+                    android:id="@android:id/tabhost"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <TabWidget
+                            android:id="@android:id/tabs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+                </TabHost>
+            </LinearLayout>
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_above="@id/linear1"
+            android:content="@+id/content1"
+            android:handle="@+id/handle1"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/handle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+            <LinearLayout
+                android:id="@id/content1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:orientation="vertical" >
+                <ScrollView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true">
+                    <TextView
+                        android:id="@+id/console"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/content"
+                        android:textSize="100sp" />
+                    </ScrollView>
+            </LinearLayout>
+        </SlidingDrawer>
+    </RelativeLayout>
+
+</FrameLayout>

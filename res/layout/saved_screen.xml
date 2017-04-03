@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2" >
+
+        <Button
+            android:id="@+id/del_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/delete_animation" />
+
+        <Button
+            android:id="@+id/searchFile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/del_button"
+            android:background="@drawable/search_animation" />
+
+        <AutoCompleteTextView
+            android:id="@+id/searchFileAutoComplete_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/searchFile_btn"
+            android:iconifiedByDefault="false"
+            android:inputType="text"
+            android:queryHint="Type your title"
+            android:ems="10"
+            android:completionThreshold="1" >
+        <requestFocus />
+        </AutoCompleteTextView>
+    </RelativeLayout>
+
+    <!-- <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="TextView" /> -->
+    
+    <ListView
+        android:id="@+id/listFile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
